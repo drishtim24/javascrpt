@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE</title>
+</head>
+<body>
+    <h1>CHAI AUR CODE</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    //setTimeout(function(){
+    //    console.log("HITESH");
+    //},2000)
+    const sayhitesh=function(){
+        console.log("HITESH");
+    }
+    const changetext=function(){
+        document.querySelector('h1').innerHTML="BEST JS SERIES"
+    }
+    const changeme=setTimeout(changetext,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme);
+        console.log("STOPPED")
+    })
+
+
+</script>
+</html>
